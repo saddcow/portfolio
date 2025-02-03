@@ -593,6 +593,29 @@ p {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+
+    .tools {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .tools-container {
+        gap: 30px;
+        max-width: 500px;
+    }
+
+    .tool {
+        width: 80%;
+    }
+
+    .tool img {
+        width: 50px;
+    }
+
+    .tool p {
+        font-size: 16px;
+    }
+
     .project-header-image {
         height: 400px; 
     }
@@ -705,8 +728,29 @@ p {
 
 @media (max-width: 360px) {
 
+    .tools {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .tools-container {
+        gap: 10px; /* Even smaller gap on mobile */
+    }
+
+    .tool {
+        width: 100px; /* Further reduce tool width on mobile */
+    }
+
+    .tool img {
+        width: 40px; /* Maintain image size on mobile */
+    }
+
+    .tool p {
+        font-size: 14px; /* Smaller text for better mobile fit */
+    }
+
     .project-header-image {
-        height: 300px;  
+        height: 300px; 
     }
 
     .project-header-image img {

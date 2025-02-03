@@ -661,6 +661,7 @@ p {
     
     .WebNavbar {
         font-size: 12px;
+        position: fixed;
     }
 
     .Hero {
@@ -800,6 +801,7 @@ p {
         font-size: 16px; 
         height: 80px;
         padding: 10px;
+        position: fixed;
     }
 
     .WebNavbar a {

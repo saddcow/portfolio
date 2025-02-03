@@ -600,20 +600,19 @@ p {
     }
 
     .tools-container {
-        gap: 30px;
-        max-width: 500px;
+        gap: 15px; 
     }
 
     .tool {
-        width: 80%;
+        width: 120px; 
     }
 
     .tool img {
-        width: 50px;
+        width: 45px; 
     }
 
     .tool p {
-        font-size: 16px;
+        font-size: 16px; 
     }
 
     .project-header-image {
@@ -734,19 +733,19 @@ p {
     }
 
     .tools-container {
-        gap: 10px; /* Even smaller gap on mobile */
+        gap: 10px; 
     }
 
     .tool {
-        width: 100px; /* Further reduce tool width on mobile */
+        width: 100px; 
     }
 
     .tool img {
-        width: 40px; /* Maintain image size on mobile */
+        width: 40px; 
     }
 
     .tool p {
-        font-size: 14px; /* Smaller text for better mobile fit */
+        font-size: 14px; 
     }
 
     .project-header-image {

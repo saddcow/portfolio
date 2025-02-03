@@ -273,6 +273,7 @@ p {
     height: 650px;
     display: flex;
     justify-content: center;
+    padding-top: 50px;
     align-items: center;
 }
 
@@ -661,7 +662,7 @@ p {
     
     .WebNavbar {
         font-size: 12px;
-        position: fixed;
+        padding: 5px 10px;
     }
 
     .Hero {
@@ -796,12 +797,7 @@ p {
     }
 
     .WebNavbar {
-        max-width: 100%; 
-        width: 100%;
-        font-size: 16px; 
-        height: 80px;
-        padding: 10px;
-        position: fixed;
+        padding: 5px 10px;
     }
 
     .WebNavbar a {

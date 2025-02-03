@@ -34,24 +34,31 @@ function typingEffect() {
 
 document.addEventListener("DOMContentLoaded", typingEffect);
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault(); 
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-
+// Smooth Scrolling
 window.addEventListener('load', function () {
+    // Initialize AOS (Animate on Scroll) after the page is fully loaded
     AOS.init({
         duration: 1000,
         easing: 'ease-in-out',
         once: false,
-        offset: 200, 
+        offset: 200,
+    });
+
+    // Add smooth scroll functionality to anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            // Add a small delay before scrolling
+            setTimeout(() => {
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }, 200); // Adjust the delay in milliseconds as needed
+        });
     });
 });
 
-// Get the current year
+// Get the current year and display it
 const currentYear = new Date().getFullYear();
 document.getElementById('current-year').textContent = currentYear;

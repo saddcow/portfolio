@@ -21,11 +21,11 @@ function typingEffect() {
     let speed = isDeleting ? 100 : 200;
 
     if (!isDeleting && j === words[i].length) {
-        speed = 1000; // pause before deleting
+        speed = 1000;
         isDeleting = true;
     } else if (isDeleting && j === 0) {
         isDeleting = false;
-        i = (i + 1) % words.length; // switch to the next word
+        i = (i + 1) % words.length;
         speed = 500;
     }
 
@@ -34,10 +34,9 @@ function typingEffect() {
 
 document.addEventListener("DOMContentLoaded", typingEffect);
 
-// Smooth Scroll for all anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-        e.preventDefault();  // Prevent the default anchor behavior
+        e.preventDefault(); 
         document.querySelector(this.getAttribute('href')).scrollIntoView({
             behavior: 'smooth'
         });
@@ -45,19 +44,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 window.addEventListener('load', function () {
-    // Initialize AOS with optimal settings
     AOS.init({
-        duration: 1000,  // Smooth animations
+        duration: 1000,
         easing: 'ease-in-out',
-        once: false,  // Play animation only once
-        offset: 200,  // Trigger when 200px from viewport
+        once: false,
+        offset: 200, 
     });
-
-    // Remove unnecessary AOS.refresh() calls on scroll
 });
 
 // Get the current year
 const currentYear = new Date().getFullYear();
-
-// Set the current year in the span with the ID 'current-year'
 document.getElementById('current-year').textContent = currentYear;

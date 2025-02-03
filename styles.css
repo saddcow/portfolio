@@ -703,10 +703,10 @@ p {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 360px) {
 
     .project-header-image {
-        height: 350px;  
+        height: 300px;  
     }
 
     .project-header-image img {
@@ -723,6 +723,7 @@ p {
     .moodboard img {
         width: 90%;
         height: auto;
+        overflow: hidden;
     }
 
     .footer-crimson,
@@ -750,23 +751,45 @@ p {
     }
 
     .WebNavbar {
+        max-width: 360px;
         width: 100%;
+        font-size: 20px;
+        height: 100px;
     }
+
+    .WebNavbar a {
+        font-size: 12px;
+        padding: 8px 8px;
+    }
+    
 
     .Hero {
         font-size: 1.2rem;
+        margin: auto;
         max-width: 100%;
     }
 
     .content-row {
-        gap: 10px;
+        gap: 30px;
         flex-direction: column;
     }
 
     .card {
-        max-width: 100%;
+        max-width: 80%;
         font-size: 12px;
         padding: 10px;
+    }
+
+    .card p {
+        text-align: left;
+    }
+
+    .image-container {
+        width: 90%;
+    }
+
+    .image-container img {
+        width: 90%;
     }
 
     .skills h2 {
@@ -776,7 +799,12 @@ p {
     .skill {
         width: 70px;
         height: 70px;
-        margin: 10px;
+        margin: 30px;
+    }
+
+    .projects {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .project-card {
@@ -795,5 +823,9 @@ p {
 
     .contact-card h3 {
         font-size: 0.9rem;
+    }
+
+    .contact {
+        padding-bottom: 20px;
     }
 }

@@ -12,6 +12,7 @@ html {
 
 /* Body Styles */
 body {
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
 }
@@ -733,13 +734,13 @@ p {
 
     .tools-container {
         gap: 10px; 
-        padding: 0 10px; /* Prevent overflow */
+        padding: 0 10px; 
         max-width: 100%;
     }
 
     .tool {
         width: 100px; 
-        max-width: 100%; /* Prevent tool from exceeding the screen width */
+        max-width: 100%; /
     }
 
     .tool img {
@@ -749,12 +750,12 @@ p {
 
     .tool p {
         font-size: 14px; 
-        word-wrap: break-word; /* Ensure text doesn't overflow */
+        word-wrap: break-word; 
     }
 
     .project-header-image {
         height: 300px; 
-        max-width: 100%; /* Prevent exceeding screen size */
+        max-width: 100%;
     }
 
     .project-header-image img {
@@ -780,7 +781,7 @@ p {
     .footer-ealert {
         height: 70px;
         font-size: 12px;
-        width: 100%; /* Prevent overflow */
+        width: 100%; 
         justify-content: center;
         align-items: center;
         padding: 10px;
@@ -794,9 +795,9 @@ p {
     }
 
     .WebNavbar {
-        max-width: 100%; /* Prevent exceeding screen size */
+        max-width: 100%; 
         width: 100%;
-        font-size: 16px; /* Adjust font size to avoid overflow */
+        font-size: 16px; 
         height: 80px;
         padding: 10px;
     }
@@ -810,7 +811,7 @@ p {
         font-size: 1.2rem;
         margin: auto;
         max-width: 100%;
-        padding: 0 10px; /* Ensure no overflow */
+        padding: 0 10px; 
     }
 
     .content-row {
@@ -819,7 +820,7 @@ p {
     }
 
     .card {
-        width: 90%; /* Ensure cards don't exceed the screen width */
+        width: 90%; 
         font-size: 12px;
         padding: 10px;
     }
@@ -829,42 +830,42 @@ p {
     }
 
     .image-container {
-        width: 90%; /* Ensure images don't exceed width */
-        padding: 0 10px; /* Prevent horizontal scroll */
+        width: 90%; 
+        padding: 0 10px;
     }
 
     .image-container img {
-        width: 100%; /* Ensure images scale with container */
+        width: 100%;
         height: auto;
     }
 
     .skills h2 {
-        font-size: 16px; /* Adjust font size */
+        font-size: 16px; 
     }
 
     .skill {
-        width: 60px; /* Smaller skill icons */
+        width: 60px; 
         height: 60px;
         margin: 20px;
     }
 
     .projects {
         padding-left: 10px;
-        padding-right: 10px; /* Adjust padding for smaller screens */
+        padding-right: 10px; 
     }
 
     .project-card {
-        width: 100%; /* Ensure project cards take up full width */
+        width: 100%;
         font-size: 12px;
     }
 
     .project-card h3 {
-        font-size: 16px; /* Adjust project title font size */
+        font-size: 16px;
     }
 
     .contact-heading,
     .socials-heading {
-        font-size: 16px; /* Adjust heading size */
+        font-size: 16px;
     }
 
     .contact-card h3 {
@@ -872,7 +873,7 @@ p {
     }
 
     .contact {
-        padding-bottom: 15px; /* Reduce bottom padding */
+        padding-bottom: 15px;
     }
 }
 

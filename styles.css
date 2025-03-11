@@ -411,6 +411,16 @@ p {
     display: flex;
 }
 
+.footer-casalabuyo {
+    height: 100px;
+    background-color: #566B50;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
 .prototype-btn-crimson {
     width: 200px;
     background: linear-gradient(45deg, #A1293C, #3B0F16);
@@ -467,6 +477,20 @@ p {
     font-weight: bold;
 }
 
+.prototype-btn-casalabuyo {
+    width: 200px;
+    background: linear-gradient(45deg, #566B50, #2C3A29);
+    border-radius: 20px;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: Quicksand;
+    font-weight: bold;
+}
+
 .moodboard-container{
     display: flex;
     justify-content: center;
@@ -475,6 +499,13 @@ p {
     flex-wrap: wrap;
     max-width: 600px;
     margin: 0 auto;
+}
+
+.moodboard img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
 }
 
 .app-sample {
@@ -644,21 +675,24 @@ p {
     .footer-crimson,
     .footer-pawfect,
     .footer-ictc,
-    .footer-ealert {
+    .footer-ealert,
+    .footer-casalabuyo {
         height: 80px;
     }
 
     .footer-crimson h2,
     .footer-pawfect h2,
     .footer-ictc h2,
-    .footer-ealert h2 {
+    .footer-ealert h2,
+    .footer-casalabuyo h2 {
         font-size: 14px;
     }
 
     .footer-crimson,
     .footer-pawfect,
     .footer-ictc,
-    .footer-ealert {
+    .footer-ealert,
+    .footer-casalabuyo {
         justify-content: center;
         align-items: center;
         text-align: center;
